@@ -1,7 +1,9 @@
-base     arctictut
-author   Laura Eun
-email    laura.eun@live.de
-date     2013-08-24
-name     Arctic TuT
-desc     A modified version of the popular Arctic Template
-url      https://www.dokuwiki.org/template:arctictut
+Arctictut Template for DokuWiki
+
+Based on the Arctic Template by Michael Klier
+
+All documentation for the Arctic Template is available online at:
+http://dokuwiki.org/template:arctictut
+
+(c) 2013 by Laura Eun <laura.eun@live.de>
+See COPYING for license info.
