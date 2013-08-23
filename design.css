@@ -493,7 +493,7 @@ div.dokuwiki pre.code {
 
 /* code blocks by file tag */
 div.dokuwiki pre.file {
-  background-color: __background_alt__;
+  background-color: __background_other__;
 }
 
 /* filenames for file and code blocks */
@@ -505,20 +505,13 @@ div.dokuwiki dl.code {
 
 div.dokuwiki dl.file dt,
 div.dokuwiki dl.code dt {
-    background-color: __background_site__;
-    background: -moz-linear-gradient(   top, __background_alt__ 0%, __background_site__ 100%);
-    background: -webkit-linear-gradient(top, __background_alt__ 0%, __background_site__ 100%);
-    background: -o-linear-gradient(     top, __background_alt__ 0%, __background_site__ 100%);
-    background: -ms-linear-gradient(    top, __background_alt__ 0%, __background_site__ 100%);
-    background: linear-gradient(        top, __background_alt__ 0%, __background_site__ 100%);
-    color: inherit;
     border: 1px solid __border__;
-    border-bottom-color: __background_site__;
+    display: inline;
+    padding: 0.1em 1em;
+    margin-left: 2em;
     border-top-left-radius: .3em;
     border-top-right-radius: .3em;
-    padding: .3em .6em .1em;
-    margin-bottom: -1px;
-    float: left;
+	box-shadow: inset 0 0 1.0em __border__;
 }
 
 div.dokuwiki dl.code dt a,
@@ -532,11 +525,9 @@ div.dokuwiki dl.code dt {
 }
 
 div.dokuwiki dl.file dt {
-    background-color: __background_alt__;
-    border-bottom: 1px solid __background_alt__;
+    background-color: __background_other__;
+    border-bottom: 1px solid __background_other__;
 }
-
-
 /* inline tables */
 div.dokuwiki table.inline {
   background-color: __background__;
