@@ -6,4 +6,4 @@ All documentation for the Arctic Template is available online at:
 http://dokuwiki.org/template:arctictut
 
 (c) 2013 by Laura Eun <laura.eun@live.de>
-See COPYING for license info.
+See LICENSE for license info.
