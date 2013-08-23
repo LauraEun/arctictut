@@ -73,10 +73,15 @@ div.headerinc {
   border: 0px solid __border__;
   border-top-left-radius:15px 15px;
   border-top-right-radius:15px 15px;
-  background-color:#cccccc;
+  background-color:#bebebe;
   margin-top: 0.1em;
   padding-left:25px;
   box-shadow:1px 3px 5px #6B6B6B;
+  /*remove the next two lines when IE supports gradients */
+  background-image: url(images/body.png);
+  background-repeat:repeat-x;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5C5C5C), to(#BEBEBE));
+  background: -moz-linear-gradient(0% 6% 270deg,#5C5C5C, #BEBEBE);
 }
 
 div.tagline {
@@ -95,7 +100,7 @@ div.footerinc {
 
 div.dokuwiki .footerinc {
   border: 1px solid __border__;
-  background-color: __footer_background__;
+  background-color: #bebebe;
   border-bottom-left-radius:15px 15px;
   border-bottom-right-radius:15px 15px;
   margin-top: 0.5em;
