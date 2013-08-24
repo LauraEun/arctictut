@@ -34,8 +34,9 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     [<?php echo strip_tags($conf['title'])?>]
   </title>
 
-  <?php tpl_metaheaders()?>
-  <?php $favicon = tpl_getMediaFile(array(':wiki:favicon.ico', ':favicon.ico', 'images/favicon.ico'), true);?>
+  <?php tpl_metaheaders()
+  // get favicon location either out of the template images folder or data/media folder
+  $favicon = tpl_getMediaFile(array(':wiki:favicon.ico', ':favicon.ico', 'images/favicon.ico'), true);?>
   <link rel="shortcut icon" href="<?php echo $favicon;?>" />
 
   <?php /*old includehook*/ @include(dirname(__FILE__).'/meta.html')?>
@@ -49,7 +50,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     <?php html_msgarea()?>
 	<?php
 	// get logo either out of the template images folder or data/media folder
-    $logo = tpl_getMediaFile(array(':wiki:'.tpl_getConf('logoname'), ':'.tpl_getConf('logoname'), 'images/'.tpl_getConf('logoname')), false, $logoSize);
+    $logo = tpl_getMediaFile(array(':wiki:'.tpl_getConf('logoname'), ':'.tpl_getConf('logoname'), 'images/'.tpl_getConf('logoname')), true);
 	?>
     <div class="stylehead">
       <div class="headerinc" style="height:<?php tpl_getConf('logoheigth') ?>;">
