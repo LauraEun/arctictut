@@ -34,9 +34,9 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     [<?php echo strip_tags($conf['title'])?>]
   </title>
 
-  <?php tpl_metaheaders()
-  // get favicon location either out of the template images folder or data/media folder
-  $favicon = tpl_getMediaFile(array(':wiki:favicon.ico', ':favicon.ico', 'images/favicon.ico'), true);?>
+  <?php tpl_metaheaders()?>
+  <!--get favicon location either out of the template images folder or data/media folder-->
+  <?php $favicon = tpl_getMediaFile(array(':wiki:favicon.ico', ':favicon.ico', 'images/favicon.ico'), true);?>
   <link rel="shortcut icon" href="<?php echo $favicon;?>" />
 
   <?php /*old includehook*/ @include(dirname(__FILE__).'/meta.html')?>
