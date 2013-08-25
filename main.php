@@ -11,8 +11,7 @@
  * @author Andreas Gohr <andi@splitbrain.org>
  * @author Michael Klier <chi@chimeric.de>
  * @author Laura Eun <laura.eun@live.de>
- * @link   http://wiki.splitbrain.org/template:arctic
- * @link   http://chimeric.de/projects/dokuwiki/template/arctic
+ * @link   http://www.dokuwiki.org/template:arctictut
  */
 
 // must be run from within DokuWiki
@@ -20,7 +19,7 @@ if (!defined('DOKU_INC')) die();
 
 global $ACT;
 
-// include custom arctic template functions
+// include custom arctictut template functions
 require_once(dirname(__FILE__).'/tpl_functions.php');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
