@@ -263,6 +263,8 @@ div.dokuwiki a.nolink {
 /* ----- Page Elements -------- */
 div.dokuwiki div.breadcrumbs {
   background: none;
+  padding-top:5px;
+  padding-bottom:1px;
 }
 
 div.left_sidebar li, div.right_sidebar li {
