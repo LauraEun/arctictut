@@ -169,7 +169,7 @@ switch(tpl_getConf('wiki_actionlinks')) {
           <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
-         ?><br><br><br>
+         ?>
 		<?php
 		}
 		?>
@@ -197,7 +197,7 @@ switch(tpl_getConf('wiki_actionlinks')) {
           <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
-         ?><br><br><br>
+         ?>
 		<?php
 		}
 		?>
@@ -233,7 +233,7 @@ switch(tpl_getConf('wiki_actionlinks')) {
         <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
-        ?><br><br>
+        ?>
 		<?php
 		}
 		?>
@@ -262,7 +262,7 @@ switch(tpl_getConf('wiki_actionlinks')) {
 	<?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
-        ?><br><br><br>
+        ?>
 		<?php
 		}
 		?>
