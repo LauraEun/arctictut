@@ -78,11 +78,8 @@ div.headerinc {
   margin-top: 0.1em;
   padding-left:25px;
   box-shadow:1px 3px 5px #6B6B6B;
-  /*remove the next two lines when IE supports gradients */
   background-image: url(images/body.png);
   background-repeat:repeat-x;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5C5C5C), to(#BEBEBE));
-  background: -moz-linear-gradient(0% 6% 270deg,#5C5C5C, #BEBEBE);
 }
 
 div.tagline {
