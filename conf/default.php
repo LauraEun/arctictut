@@ -24,5 +24,8 @@ $conf['logoname']                   = 'headerlogo.png';             // name of t
 $conf['logowidth']                  = '128px';                      // width of the headerlogo
 $conf['logoheigth']                 = '128px';                      // heigth of the headerlogo
 $conf['show_backlink']              = 'both';                       // show backlink at top and/or bottom of the page
+//$conf['sidebar_width_left']         = '19';                        // width right sidebar
+//$conf['sidebar_width_right']        = '16';                        // width right sidebar
+$conf['translation_bar']            = 'top and bottom';             // Position of the Translationbar
 //Setup vim: ts=2 sw=2:
 ?>

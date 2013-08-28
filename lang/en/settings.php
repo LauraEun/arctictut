@@ -25,4 +25,7 @@ $lang['logoname']                       = "Name of the Headerlogo";
 $lang['logowidth']                      = "Width of the Headerlogo (don't forget the unit like px)";
 $lang['logoheigth']                     = "Heigth of the Headerlogo (don't forget the unit like px)";
 $lang['show_backlink']                  = "Position of the Backlink link";
+//$lang['sidebar_width_left']             = "Width of the left sidebar in percent";
+//$lang['sidebar_width_right']            = "Width of the right sidebar in percent";
+$lang['translation_bar']                = "Position of the Translation Bar";
 // vim:ts=4:sw=4:et:enc=utf-8:

@@ -24,5 +24,8 @@ $meta['logoname']                 = array('string', '_pattern' => '#[a-z0-9]*#')
 $meta['logowidth']                = array('string', '_pattern' => '#[a-z0-9]*#');
 $meta['logoheigth']               = array('string', '_pattern' => '#[a-z0-9]*#');
 $meta['show_backlink']            = array('multichoice', '_choices' => array('none', 'both', 'top', 'bottom'));
+//$meta['sidebar_width_left']       = array('string', '_pattern' => '#[a-z0-9]*#');
+//$meta['sidebar_width_right']      = array('string', '_pattern' => '#[a-z0-9]*#');
+$meta['translation_bar']          = array('multichoice', '_choices' => array('none', 'breadcrumbs', 'top', 'bottom', 'top and bottom'));
 //Setup vim:ts=2:sw=2:
 ?>

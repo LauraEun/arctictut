@@ -64,6 +64,16 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       <?php if(tpl_getConf('trace')) {?> 
       <div class="breadcrumbs">
         <?php ($conf['youarehere'] != 1) ? tpl_breadcrumbs() : tpl_youarehere();?>
+		<?php if (tpl_getConf('translation_bar') == 'breadcrumbs') { ?>
+		<div style="float:right;">
+		 <?php
+          $translation = &plugin_load('helper','translation');
+          if ($translation) echo $translation->showTranslations();
+         ?>
+		</div>
+		<?php
+		}
+		?>
       </div>
       <?php } ?>
 
@@ -155,15 +165,23 @@ switch(tpl_getConf('wiki_actionlinks')) {
           <?php arctic_tpl_sidebar('left') ?>
         </div>
         <div class="right_page">
+		<?php if (tpl_getConf('translation_bar') == 'top' || tpl_getConf('translation_bar') == 'top and bottom') { ?>
           <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
-         ?>
+         ?><br><br><br>
+		<?php
+		}
+		?>
           <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
+		  <?php if (tpl_getConf('translation_bar') == 'bottom' || tpl_getConf('translation_bar') == 'top and bottom') { ?>
           <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
          ?>
+		<?php
+		}
+		?>
         </div>
       <?php } else { ?>
         <div class="page">
@@ -175,15 +193,23 @@ switch(tpl_getConf('wiki_actionlinks')) {
 
       <?php if(!arctic_tpl_sidebar_hide()) { ?>
 		<div class="left_page">
+		<?php if (tpl_getConf('translation_bar') == 'top' || tpl_getConf('translation_bar') == 'top and bottom') { ?>
           <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
-         ?>
+         ?><br><br><br>
+		<?php
+		}
+		?>
           <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
+		<?php if (tpl_getConf('translation_bar') == 'bottom' || tpl_getConf('translation_bar') == 'top and bottom') { ?>
           <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
          ?>
+		<?php
+		}
+		?>
         </div>
         <div class="right_sidebar">
           <?php tpl_searchform() ?>
@@ -203,15 +229,23 @@ switch(tpl_getConf('wiki_actionlinks')) {
           <?php arctic_tpl_sidebar('left') ?>
         </div>
 		<div class="center_page">
+		<?php if (tpl_getConf('translation_bar') == 'top' || tpl_getConf('translation_bar') == 'top and bottom') { ?>
         <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
-        ?>
+        ?><br><br><br>
+		<?php
+		}
+		?>
           <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
+		<?php if (tpl_getConf('translation_bar') == 'bottom' || tpl_getConf('translation_bar') == 'top and bottom') { ?>
           <?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
         ?>
+		<?php
+		}
+		?>
         </div>
         <div class="right_sidebar">
           <?php if(tpl_getConf('search') == 'right') tpl_searchform() ?>
@@ -224,16 +258,24 @@ switch(tpl_getConf('wiki_actionlinks')) {
       <?php }?>
 
 	<?php } elseif(tpl_getConf('sidebar') == 'none') { ?>
+	<?php if (tpl_getConf('translation_bar') == 'top' || tpl_getConf('translation_bar') == 'top and bottom') { ?>
 	<?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
-        ?><br><br>
+        ?><br><br><br>
+		<?php
+		}
+		?>
       <div class="page">
         <?php tpl_content() ?>
+		<?php if (tpl_getConf('translation_bar') == 'bottom' || tpl_getConf('translation_bar') == 'top and bottom') { ?>
 		<?php
           $translation = &plugin_load('helper','translation');
           if ($translation) echo $translation->showTranslations();
         ?>
+		<?php
+		}
+		?>
       </div>
     <?php } ?>
 

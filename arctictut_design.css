@@ -17,7 +17,7 @@ body {
 div#wrapper {
   margin: auto;
   width: __wiki_width__;
-  border: 1px solid __border__;
+  border: 0px solid __border__;
   background: __background__;
   padding: __page_padding__;
   border-radius:20px;
@@ -59,7 +59,6 @@ div.dokuwiki div.center_page {
   margin-top:4px;
   text-align: justify;
   float: left;
-  width: 59% !important;
   width: 59% !important;
   width: 58%;
   padding: 2% !important;
@@ -288,11 +287,11 @@ div.dokuwiki h5 {
 }
 
 /* special headlines */
-div.dokuwiki h1 {font-size: 180%; font-weight: normal;}
-div.dokuwiki h2 {font-size: 170%; }
-div.dokuwiki h3 {font-size: 160%; font-weight: normal;}
-div.dokuwiki h4 {font-size: 140%; font-weight: normal;}
-div.dokuwiki h5 {font-size: 120%; font-weight: bold;}
+div.dokuwiki h1 {font-size: 180%; font-weight: normal; margin-left: 0px;}
+div.dokuwiki h2 {font-size: 170%; font-weight: normal; margin-left: 20px;}
+div.dokuwiki h3 {font-size: 160%; font-weight: normal; margin-left: 40px; border-bottom:none;}
+div.dokuwiki h4 {font-size: 150%; font-weight: normal; margin-left: 60px; border-bottom:none;}
+div.dokuwiki h5 {font-size: 140%; font-weight: normal; margin-left: 80px; border-bottom:none;}
 
 /* code blocks by indention */
 div.dokuwiki pre.code,
@@ -389,7 +388,7 @@ div.dokuwiki div.toc_sidebar div.tocheader {
 }
 
 div.dokuwiki ul.toc {
-  padding-left: 0.5em;
+  padding-left: 0.1em;
 }
 
 div.dokuwiki div.toc_sidebar div#toc__inside {

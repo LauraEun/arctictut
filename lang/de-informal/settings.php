@@ -25,3 +25,4 @@ $lang['logoname']                       = "Name vom Headerlogo";
 $lang['logowidth']                      = "Weite des Headerlogo (vergiss nicht die Einheit wie px)";
 $lang['logoheigth']                     = "Höhe des Headerlogo (vergiss nicht die Einheit wie px)";
 $lang['show_backlink']                  = "Position vom Backlink link";
+$lang['translation_bar']                = "Position der Translation Leiste";
