@@ -53,7 +53,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 	?>
     <div class="stylehead">
       <div class="headerinc" style="height:<?php tpl_getConf('logoheigth') ?>;">
-      <a href="<?php echo $url?>?id=start" accesskey="h" title="[[START]]" name="dokuwiki__top"><img src="<?php echo $logo?>" width="<?php echo tpl_getConf('logowidth') ?>" height="<?php echo tpl_getConf('logoheigth') ?>" border="0" /></a>
+      <a href="<?php echo DOKU_URL ?>doku.php" accesskey="h" title="[[START]]" name="dokuwiki__top"><img src="<?php echo $logo?>" width="<?php echo tpl_getConf('logowidth') ?>" height="<?php echo tpl_getConf('logoheigth') ?>" border="0" /></a>
 	  <?php if ($conf['tagline']): ?>
 		<div class="tagline">
 		<?php echo $conf['tagline']; ?>

@@ -7,7 +7,7 @@
 
 /* ----- General Elements ----- */
 body {
-  font: __font_size__ Verdana, "Lucida Grande", Lucida, Helvetica, Arial, sans-serif;
+  font: __font_size__ Verdana, Helvetica, Lucida, "Lucida Grande", Arial, sans-serif;
   color: __text__;
   margin: __body_margin__;
   line-height: __line_height__;
@@ -17,7 +17,6 @@ body {
 div#wrapper {
   margin: auto;
   width: __wiki_width__;
-  border: 0px solid __border__;
   background: __background__;
   padding: __page_padding__;
   border-radius:20px;
@@ -31,14 +30,12 @@ div.dokuwiki div.left_sidebar {
   float: left;
   width: 19%;
   padding: 0.2em 10px 0 0;
-  border-right: 0px solid  __border__;
 }
 
 div.dokuwiki div.right_sidebar {
   float: right;
   width: 16%;
   padding: 0.2em 0em 0 10px;
-  border-left: 0px solid __border__;
 }
 
 div.dokuwiki div.page {
@@ -63,14 +60,12 @@ div.dokuwiki div.center_page {
   width: 58%;
   padding: 2% !important;
   padding: 1%;
-  border: 0px solid __border__;
   background-color: __header_background__;
   box-shadow:1px 1px 5px #6B6B6B;
   border-radius:7px;
 }
 
 div.headerinc {
-  border: 0px solid __border__;
   border-top-left-radius:15px 15px;
   border-top-right-radius:15px 15px;
   background-color:#bebebe;
@@ -91,16 +86,13 @@ div.tagline {
   font-family:Courier New, Monospace;
 }
 
-div.footerinc {
-  box-shadow:1px 3px 5px #6B6B6B;
-}
-
 div.dokuwiki .footerinc {
-  border: 1px solid __border__;
+  border: 0px solid __border__;
   background-color: #bebebe;
   border-bottom-left-radius:15px 15px;
   border-bottom-right-radius:15px 15px;
   margin-top: 0.5em;
+  box-shadow:1px 3px 5px #6B6B6B;
 }
 
 div.dokuwiki .footerinc a img {
@@ -139,7 +131,7 @@ div.dokuwiki div.right_sidebar h4,
 div.dokuwiki div.right_sidebar h5,
 div.dokuwiki div.right_sidebar h6 {
   font-size: 100%;
-  font-family: Verdana, "Lucida Grande", Lucida, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Lucida, "Lucida Grande", Arial, sans-serif;
   font-weight: bold;
   padding: 0.1em;
   border: none;
@@ -157,7 +149,6 @@ div.dokuwiki div.right_sidebar h1 {
   text-align: left;
   box-shadow: inset 0 0 1.0em __border__;
   border-radius: 5px;
-  border: solid 0px;
   padding-left: 10px;
 }
 
@@ -179,7 +170,6 @@ div.dokuwiki div.right_sidebar ul {
 }
 
 div.dokuwiki div.sidebar_box {
-  border: 1px solid __border__;
   border-radius:7px;
   box-shadow:1px 1px 5px #6B6B6B;
   margin-bottom: 0.2em;
@@ -308,7 +298,7 @@ div.dokuwiki pre.file {
     color: __text__;
     box-shadow: inset 0 0 1.0em __border__;
     border-radius: 5px;
-	border: solid 0px;
+	border: 0px solid __border__;
 }
 
 /* Footnotes fix for IE7 */
@@ -344,7 +334,7 @@ div.dokuwiki div.left_sidebar form#dw__search input.edit,
 div.dokuwiki div.right_sidebar form#dw__search input.edit {
   margin-left: 0;
   font-size: 100%;
-  width: 60%;
+  width: 65%;
 }
 
 /* Buttons */
@@ -375,7 +365,8 @@ div.dokuwiki div.toc_sidebar div.toc {
 }
 
 div.dokuwiki div.toc ul {
-  margin-left: 0.2em;
+  margin-left: 0.1em;
+  
 }
 
 
@@ -390,7 +381,7 @@ div.dokuwiki div.toc_sidebar div.tocheader {
 }
 
 div.dokuwiki ul.toc {
-  padding-left: 0.1em;
+  padding-left: 0em;
 }
 
 div.dokuwiki div.toc_sidebar div#toc__inside {
@@ -409,6 +400,8 @@ div.dokuwiki div.right_sidebar div.ajax_qsearch {
   font-size: 85%;
   width: 95.5%;
   margin: 0.2em 0 0.5em 0;
+  border-radius: 5px;
+  box-shadow:1px 1px 5px #6B6B6B;
 }
 
 div.dokuwiki div#bar__top div.ajax_qsearch {
@@ -460,6 +453,8 @@ div.dokuwiki div.toolbox_sidebar a.media,
 div.dokuwiki div.toolbox_sidebar a.profile,
 div.dokuwiki div.toolbox_sidebar a.revert,
 div.dokuwiki div.toolbox_sidebar a.top,
+div.dokuwiki div.toolbox_sidebar a.print,
+div.dokuwiki div.toolbox_sidebar a.pdf,
 div.dokuwiki div.toolbox_sidebar a.npd {
   padding: 1px 0px 1px 18px;
 }
@@ -535,6 +530,14 @@ div.dokuwiki div.toolbox_sidebar a.top {
   background: transparent url(images/tool-top.png) 0px 5px no-repeat;
 }
 
+div.dokuwiki div.toolbox_sidebar a.print {
+  background: transparent url(images/tool-print.png) 0px 5px no-repeat;
+}
+
+div.dokuwiki div.toolbox_sidebar a.pdf {
+  background: transparent url(images/tool-pdf.png) 0px 5px no-repeat;
+}
+
 div.dokuwiki div.bar a.media,
 div.dokuwiki div.bar a.login,
 div.dokuwiki div.bar a.logout,
@@ -556,6 +559,8 @@ div.dokuwiki div.bar a.back,
 div.dokuwiki div.bar a.profile,
 div.dokuwiki div.bar a.top,
 div.dokuwiki div.bar a.revert,
+div.dokuwiki div.bar a.print,
+div.dokuwiki div.bar a.pdf,
 div.dokuwiki div.bar a.npd {
   padding-left: 20px;
 }
@@ -628,5 +633,13 @@ div.dokuwiki div.bar a.revert {
 }
 div.dokuwiki div.bar a.media {
   background: transparent url(images/mediamanager.png) 0px 5px no-repeat;
+}
+
+div.dokuwiki div.bar a.print {
+  background: transparent url(images/tool-print.png) 0px 5px no-repeat;
+}
+
+div.dokuwiki div.bar a.pdf {
+  background: transparent url(images/tool-pdf.png) 0px 5px no-repeat;
 }
 
